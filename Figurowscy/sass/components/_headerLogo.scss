@@ -1,0 +1,25 @@
+.header__logo {
+  display: inline-flex;
+  text-align: center;
+  position: relative;
+  top: 0.9em;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.383em;
+  padding-left: 20px;
+}
+.header__logo-web {
+  color: var(--colorHover);
+}
+.reference {
+  .header__logo-studio {
+    color: var(--colorStudio);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-left: 0;
+  }
+}

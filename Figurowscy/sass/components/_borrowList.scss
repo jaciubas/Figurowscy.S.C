@@ -1,0 +1,97 @@
+.borrow {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 50px;
+  background-color: #f5f4fa;
+  width: 100%;
+  margin-top: 20px;
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 110px;
+    margin-top: 20px;
+  }
+
+  &::before {
+    content: "WYPOŻYCZENIA";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &__button {
+    display: flex;
+    color: white;
+    background-color: rgba(33, 150, 243, 1);
+    border-radius: 3%;
+    width: 140px;
+    height: 40px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__element {
+    margin-bottom: 10px;
+    list-style: none;
+    width: 140px;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      color: blue;
+    }
+  }
+  &__price {
+    position: absolute;
+
+    bottom: -45px;
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .borrow__list {
+    width: 48%;
+    // margin: 0 1%;
+  }
+  .borrow:nth-child(odd) .borrow__list {
+    margin-right: 0;
+  }
+  .borrow:nth-child(even) .borrow__list {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .borrow__list {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}

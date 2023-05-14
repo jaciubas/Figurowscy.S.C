@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <title>Figurowscy.pl</title>
+  </head>
+  <body>
+    <header class="header container-global">
+      <button
+        class="menu-toggle js-open-menu mobile-menu__open-btn"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <a class="header__logo reference" href="./index.html"
+        ><span class="header__logo-web">Serwis</span
+        ><span class="header__logo-studio">Figurowscy</span></a
+      >
+
+      <!-- <nav class="menu">
+        <ul class="header__navbar1">
+          <li class="header__navbar1-item">
+            <a
+              class="reference header__navbar1-navigation navIndex"
+              href="./index.html"
+              >Strona Główna</a
+            >
+          </li>
+          <li class="header__navbar1-item">
+            <a
+              class="reference header__navbar1-navigation"
+              href="./portfolio.html"
+              >Nasze Produkty</a
+            >
+          </li>
+          <li class="header__navbar1-item">
+            <a class="reference header__navbar1-navigation" href="#"
+              >Wypożyczenia</a
+            >
+          </li>
+        </ul>
+      </nav> -->
+      <ul class="header__Contact">
+        <li class="header__Contact-item">
+          <a class="header__mail-tel" href="mailto:info@devstudio.com">
+            <svg
+              style="width: 14px; height: 14px"
+              class="headerPhoneAndMailSvg"
+              alt="e-mail"
+            >
+              <use xlink:href="./Images/icons.svg#icon-envelope"></use>
+            </svg>
+            biuro@figurowscy.pl
+          </a>
+        </li>
+        <li class="header__Contact-item">
+          <span class="phoneAndMail"
+            ><a class="header__mail-tel" href="tel:+48111111111">
+              <svg
+                style="width: 14px; height: 14px"
+                alt="telefon"
+                class="headerPhoneAndMailSvg"
+              >
+                <use xlink:href="./Images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            ></span
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="section heading-section">
+        <div class="container-global heading-section__wrapper">
+          <h1 class="heading-section__title">
+            Oficjalny Dystrybutor Firm Ridgid oraz Rothenberger
+          </h1>
+          <!-- <button class="heading-section__button" data-modal-open>
+            Zamów usługę
+          </button> -->
+        </div>
+      </section>
+      <div class="container-global">
+        <section class="about">
+          <h2 class="about__header">O nas</h2>
+          <p class="about__text">
+            Firma Figurowscy S.C. od ponad 20 lat zajmuję się utrzymaniem rynku
+            instalatorów budowlanych, naprawiamy, produkujemy, sprzedajemy,
+            doradzamy, oraz wypożyczamy maszyny budowlane (gwintownice,
+            rowkarki, zaciskarki, młotki, młotowiertarki itp.) Na stałe
+            wspólpracujemy z takimi firmami jak ANB czy RetroStar
+          </p>
+        </section>
+      </div>
+      <section class="borrow">
+        <div class="container-global borrow__box">
+          <ul class="borrow__list">
+            <h3 class="borrow__title">Rowkarki</h3>
+            <li class="borrow__element">
+              <a href="#" class="borrow__button">Ridgid 916</a>
+            </li>
+            <li class="borrow__element">
+              <a href="#" class="borrow__button">Ridgid 918</a>
+            </li>
+            <li class="borrow__element">
+              <a href="#" class="borrow__button">Ridgid 915</a>
+            </li>
+          </ul>
+          <ul class="borrow__list">
+            <h3 class="borrow__title">Wiertnice do betonu</h3>
+            <li class="borrow__element">
+              <a href="#" class="borrow__button">Wiertnica 1</a>
+            </li>
+          </ul>
+          <ul class="borrow__list">
+            <h3 class="borrow__title">Gwintownice</h3>
+            <li class="borrow__element">
+              <a href="#" class="borrow__button">Ridgid 300 Compact</a>
+            </li>
+            <li class="borrow__element">
+              <a href="#" class="borrow__button">Ridgid 1233</a>do 2 cali
+            </li>
+            <li class="borrow__element">
+              <a href="#" class="borrow__button">Ega master</a>do 4 cali
+            </li>
+          </ul>
+          <a href="#" class="borrow__price"> Cennik</a>
+        </div>
+      </section>
+
+      <section class="our-products">
+        <div class="container-global">
+          <h2 class="our-products__header">Nasze Produkty</h2>
+        </div>
+      </section>
+      <section class="section our-clients">
+        <div class="container-global">
+          <h2 class="main-section-global">Nasi klienci</h2>
+          <ul class="our-clients__cards">
+            <div class="our-clients-mobile our-clients-tablet">
+              <li class="our-clients__item our-clients__item--primary">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="YA&CO   "
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo5"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="our-clients__item">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="Company Tagline Here"
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo4"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="our-clients__item">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="Company "
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo3"></use>
+                  </svg>
+                </div>
+              </li>
+            </div>
+            <div class="our-clients-mobile">
+              <li class="our-clients__item our-clients__item--primary">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="Foster Peters"
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo2"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="our-clients__item">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="Brand"
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo1"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="our-clients__item">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="Company Tagline"
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo"></use>
+                  </svg>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container-global footer__wrapper">
+        <div class="footer__wrapper-contact">
+          <a class="footer__logo reference" href="./index.html"
+            ><span class="footer__logo-web">Serwis</span
+            ><span class="studio">Figurowscy</span></a
+          >
+
+          <address class="footer__addres">m. Warszawa, Sezam 8</address>
+          <ul class="footer__contact">
+            <li class="list-element footer__contact-element">
+              <a
+                class="footer__contact-telMailFooter"
+                href="mailto:info@devstudio.com"
+                >biur@figurowscy.pl</a
+              >
+            </li>
+            <li class="list-element footer__contact-element--primary">
+              <a class="footer__contact-telMailFooter" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="hours-open">
+          <h3 class="hours-open__header">Godziny Otwarcia</h3>
+          <li class="hours-open__elem">Pon. 8:00 - 17:00</li>
+          <li class="hours-open__elem">Wt. 8:00 - 17:00</li>
+          <li class="hours-open__elem">Śr. 8:00 - 17:00</li>
+          <li class="hours-open__elem">Czw. 8:00 - 17:00</li>
+          <li class="hours-open__elem">Pią. 8:00 - 17:00</li>
+          <li class="hours-open__elem">Sob. Nieczynne</li>
+          <li class="hours-open__elem">Niedz. Nieczynne</li>
+        </ul>
+
+        <div class="footer__Socialmedia">
+          <ul class="footer__icons-social">
+            <li>
+              <h4 class="footer__social-header">Dołącz do nas na facebooku</h4>
+            </li>
+
+            <!-- <li class="footer__icon-social">
+              <a class="social-footer" href="#">
+                <div class="footer__box-icon">
+                  <svg
+                    class="footer__Social-icon-svg"
+                    alt="Instagram"
+                    width="20"
+                    height="20"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-instagram2"></use>
+                  </svg>
+                </div>
+              </a>
+            </li> -->
+            <!-- <li>
+              <a class="social-footer" href="#">
+                <div class="footer__box-icon">
+                  <svg
+                    class="footer__Social-icon-svg"
+                    alt="Twitter"
+                    width="20"
+                    height="20"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-twitter1"></use>
+                  </svg>
+                </div>
+              </a>
+            </li> -->
+            <li>
+              <a class="social-footer" href="#">
+                <div class="footer__box-icon">
+                  <svg
+                    class="footer__Social-icon-svg"
+                    alt="Facebook"
+                    width="20"
+                    height="20"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-facebook1"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <!-- <li>
+              <a class="social-footer" href="#">
+                <div class="footer__box-icon">
+                  <svg
+                    class="footer__Social-icon-svg"
+                    alt="Linkedin"
+                    width="20"
+                    height="20"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-linkedin1"></use>
+                  </svg>
+                </div>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="footer__subscribe">
+        <h4 class="footer__subscribe-header">Zapisz się do Newslettera</h4>
+        <form>
+          <input
+            type="email"
+            class="footer__subscribe-email"
+            placeholder="E-mail"
+          />
+        </form>
+        <button type="submit" class="footer__subscribe-btn">
+          Zapisz się
+          <svg
+            class="footer__subscribe-icon-svg"
+            alt="Ikona wysyłania"
+            width="24"
+            height="24"
+          >
+            <use xlink:href="./Images/icons.svg#icon-send"></use>
+          </svg>
+        </button>
+      </div> -->
+    </footer>
+    <!-- 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h3 class="modal__header">Zostaw swoje dane w formularzu</h3>
+        <form class="modal__form" name="modal__form" validate>
+          <label class="modal__label modalLabelIcon">
+            <span class="modal__span-label">Imie</span>
+
+            <input
+              type="text"
+              name="name"
+              class="modal__input modalInputName"
+            />
+            <svg class="modal__icon" alt="Icon Name" width="18" height="18">
+              <use xlink:href="./Images/icons.svg#icon-name"></use>
+            </svg>
+          </label>
+          <label class="modal__label modalLabelIcon">
+            <span class="modal__span-label">Telefon</span>
+            <input type="tel" name="numerTel" class="modal__input" />
+            <svg class="modal__icon" alt="Icon tel" width="18" height="18">
+              <use xlink:href="./Images/icons.svg#icon-tel"></use>
+            </svg>
+          </label>
+          <label class="modal__label modalLabelIcon">
+            <span class="modal__span-label">Email</span>
+            <input type="email" name="email" class="modal__input" />
+            <svg class="modal__icon" alt="Icon Email" width="18" height="18">
+              <use xlink:href="./Images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="modal__label modalLabelTextarea"
+            ><span class="modal__span-label comment">Komentarz</span>
+            <textarea
+              class="modal__textarea"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+          <label class="modal__Checkbox">
+            <input type="checkbox" class="modalCheckbox" />
+            <svg
+              class="modal__Checkbox~primary"
+              alt="Icon tel"
+              width="13"
+              height="13"
+            >
+              <use xlink:href="./Images/icons.svg#icon-checkbox"></use>
+            </svg>
+            <span class="modal__span">
+              Oświadczam iż akceptuje&nbsp
+              <a href="#" class="modal__link"> Regulamin</a>&nbspi&nbsp
+              <a class="modal__link" href="#">Polityke Prywatności</a></span
+            >
+          </label>
+        </form>
+        <button class="modal__btn" type="submit" value="Wyślij">Wyślij</button>
+
+        <button type="submit" class="modal__close-btn" data-modal-close>
+          X
+        </button>
+      </div>
+    </div> -->
+    <!-- <div class="menu-mobile js-menu-mobile is-open" id="mobile-menu">
+      <ul class="menu-mobile__nav">
+        <li class="menu-mobile__element list-element">
+          <a href="./index.html" class="menu-mobile__link">Agencja</a>
+        </li>
+        <li class="menu-mobile__element list-element">
+          <a href="./portfolio.html " class="menu-mobile__link">Portfolio</a>
+        </li>
+        <li class="menu-mobile__element list-element">
+          <a href="#" class="menu-mobile__link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="mobile-contact">
+        <ul class="mobile-contact__list list-element">
+          <li class="mobile-contact__list-element list-element">
+            <a
+              href="tel:+48111111111"
+              class="mobile-contact__link mobile-contact--primary"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="mobile-contact__list-element list-element">
+            <a href="mailto:info@devstudio.com" class="mobile-contact__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social__element list-element">
+            <a href="https://www.instagram.com/" class="mobile-social__link"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-social__element list-element">
+            <a href="https://twitter.com/" class="mobile-social__link"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-social__element list-element">
+            <a href="https://www.facebook.com/" class="mobile-social__link"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-social__element list-element">
+            <a href="https://www.linkedin.com/" class="mobile-social__link"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button class="menu-toggle mobile-menu__close-btn js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div> -->
+  </body>
+</html>
